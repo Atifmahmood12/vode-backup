@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppConfig>
+	<!-- <ServerAPPURI>https://kplus-stage-api.vidscapeapp.com</ServerAPPURI> -->
+	<ServerAPPURI>http://localhost:8080</ServerAPPURI>
+	<ClientAPPURI>https://kplus-stage-api.vidscapeapp.com</ClientAPPURI>
+	<BannerAPIBasePath>/banner?</BannerAPIBasePath>
+	<GroupAPIBasePath>/menu?</GroupAPIBasePath>
+	<GroupDetailAPIBasePath>/menu/</GroupDetailAPIBasePath>
+	<SubGroupAPIBasePath>/group/</SubGroupAPIBasePath>
+	<ContentDetailAPIBasePath>/content/</ContentDetailAPIBasePath>
+	<ContentAuthorizationDetailAPIBasePath>/content/isAuthorized/
+	</ContentAuthorizationDetailAPIBasePath>
+	<VODSearchAPIBasePath>/search/content/?</VODSearchAPIBasePath>
+	<TestDataFilePath>./src/main/resources/TestData.xlsx</TestDataFilePath>
+	<TestDataCSVsourceFolderPath>./src/main/resources/</TestDataCSVsourceFolderPath>
+
+	<!-- <AMQConnString>tcp://kplus-stage-devops.vidscapeapp.com:5051</AMQConnString> 
+		<QueueName>KPLUS-CONTENTS-4</QueueName> -->
+		
+	<AMQConnString>tcp://localhost:61616</AMQConnString>
+	<QueueName>MultiscreenPublish</QueueName>
+	
+	<!--  <ServerAPIAccessorUserName>demo@vodworks.com</ServerAPIAccessorUserName>
+	<ServerAPIAccessorPassword>123456</ServerAPIAccessorPassword>
+	-->
+	
+	<ServerAPIAccessorUserName>amehmood@vodworks.com</ServerAPIAccessorUserName>
+	<ServerAPIAccessorPassword>Atif</ServerAPIAccessorPassword>
+</AppConfig>

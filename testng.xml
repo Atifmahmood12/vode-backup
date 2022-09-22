@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suites" parallel="false" verbose="2">
+	<listeners>
+		<listener class-name="com.vidscape.utils.Listener" />
+
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="VerifyCateogyAPIStatusCode">
+		<parameter name="apiURL" value="https://api.tmsandbox.co.nz/"></parameter>
+		<parameter name="version" value="v1"></parameter>
+		<parameter name="catalogueFlag" value="false"></parameter>
+		<parameter name="categoryId" value="6327"></parameter>
+		<classes>
+			<class name="com.vidscape.tests.AssurityAssignment">
+			</class>
+		</classes>
+	</test>
+	
+	<!-- 
+	<test name="Genre Test" group-by-instances="true" preserve-order="true">
+		<classes>
+			<class name="com.vidscape.IngestMessageTest.TestDriver">
+			</class>
+		</classes>
+	</test>
+
+ 
+	<test name="Movie Test" group-by-instances="true"
+		preserve-order="true">
+		<classes>
+			<class name="com.vidscape.IngestMessageTest.MovieContentTest">
+			</class>
+		</classes>
+	</test>
+	<test name="EPISODE Test" group-by-instances="true"
+		preserve-order="true">
+		<classes>
+			<class name="com.vidscape.IngestMessageTest.EpisodeContentTest">
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name="Subscription Test" group-by-instances="true"
+		preserve-order="true">
+		<classes>
+			<class name="com.vidscape.IngestMessageTest.SubscriptionTest">
+			</class>
+		</classes>
+	</test>
+	<test name="Brand Test" group-by-instances="true" preserve-order="true">
+		<classes>
+			<class name="com.vidscape.IngestMessageTest.BrandTest">
+			</class>
+		</classes>
+	</test>  -->
+
+	
+	
+<!-- 	<test name="GroupDetail" group-by-instances="true" preserve-order="true">
+	<classes>
+		<class name="com.vidscape.tests.GroupDetail">
+		<methods>
+					<include name="verifyAssociatedSubGroupImages"></include>
+				</methods>
+		
+		
+		</class>
+	</classes>
+</test>
+	 <test name="Search" group-by-instances="true" preserve-order="true">
+		<classes>
+			<class name="com.vidscape.tests.Search">
+			</class>
+		</classes>
+	</test>
+	<test name="ContentDetail" group-by-instances="true"
+		preserve-order="true">
+		<classes>
+			<class name="com.vidscape.tests.ContentDetail">
+			</class>
+		</classes>
+	</test> 
+	<test name="SubGroup" group-by-instances="true" preserve-order="true">
+		<classes>
+			<class name="com.vidscape.tests.SubGroup">
+				<methods>
+					<include name="verifyAssociatedSubGroupImage"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>-->
+	<!--  <test name="ContentAuthorization" group-by-instances="true"
+		preserve-order="true">
+		<classes>
+			<class name="com.vidscape.tests.ContentAuthrization">
+			</class>
+		</classes>
+	</test> 
+	<test name="Group" group-by-instances="true" preserve-order="true">
+		<classes>
+			<class name="com.vidscape.tests.Group">
+				<methods>
+					<include name="VerifyGroupContentImages"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 	
+	
+	<test name="Banner" group-by-instances="true" preserve-order="true">
+		<classes>
+			<class name="com.vidscape.tests.Banner">
+			<methods>
+			<include name="verifyPromotionTypeBannerImages"></include>
+			</methods>
+			</class>
+		</classes>
+	</test> 
+-->
+</suite> <!-- Suite -->
